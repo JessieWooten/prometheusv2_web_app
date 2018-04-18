@@ -1,0 +1,19 @@
+.description{
+  &__container{
+    height: 120px;
+    overflow: scroll;
+  }
+
+  &__text{
+    padding: 14px;
+    &-long{
+      font-size: 13px;
+    }
+    &-author{
+      font-size: 12px;
+      margin-bottom: 5px;
+      display: block;
+      color: $nc-gray;
+    }
+  }
+}

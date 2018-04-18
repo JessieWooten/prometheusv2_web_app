@@ -1,0 +1,50 @@
+.edit{
+  &__container{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    margin-right: 1em;
+    height: auto;
+  }
+
+  &-button {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  box-shadow: $nc-card-shadow;
+  -webkit-box-shadow:$nc-card-shadow ;
+  -moz-box-shadow:$nc-card-shadow;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+
+    &__wrapper {
+      display: inline-block;
+    }
+
+    &:active {
+      transform: translate(2px,2px)
+    }
+
+    &__icon {
+      color: $nc-gray !important;
+    }
+  }
+
+  &__revert-button {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    box-shadow: $nc-card-shadow;
+    -webkit-box-shadow: $nc-card-shadow;
+    -moz-box-shadow: $nc-card-shadow;
+    width: 40px;
+    height: 40px;
+
+
+    &__icon {
+      color: $nc-gray !important;
+      transform: scaleX(-1)
+    }
+  }
+}

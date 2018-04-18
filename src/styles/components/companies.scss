@@ -1,0 +1,67 @@
+.companies {
+  border-top: 1px solid #ccc;
+  //border-bottom: 1px solid #ccc;
+  width: 100%;
+  //height: 120px;
+
+  &__title {
+    font-weight: 500;
+    margin: .5em;
+    margin-left: 14px;
+    font-size: 1.3em;
+    color: $nc-dark-gray;
+  }
+
+  &__overflow {
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-start;
+
+  }
+  &__wrapper {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    &:first-child {
+      margin-left: 5px;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + label {
+      background-color: $nc-blue;
+      border: 1px solid $nc-blue;
+      color: $nc-white;
+      box-shadow: $nc-card-shadow;
+      -webkit-box-shadow: $nc-card-shadow;
+      -moz-box-shadow: $nc-card-shadow;
+    }
+  }
+
+  &__chip {
+    transition: .2s;
+    white-space: normal;
+    border: 1px solid $nc-gray;
+    color: $nc-dark-gray;
+    font-size: 11px;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    max-width: 140px;
+    min-width: 120px;
+    text-align: center;
+  }
+}
+
+.select-wrapper{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 44px;
+  width: 100%;
+}

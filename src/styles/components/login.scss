@@ -1,0 +1,86 @@
+.login{
+  &__page{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $nc-white;
+    transition: .4s;
+    transform: translate3d(0,-100vh,0);
+    &-opened{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: $nc-white;
+      transition: .4s;
+      z-index: 6000;
+    }
+  }
+
+  &__title{
+    font-weight: 300;
+    color: $nc-dark-gray;
+    opacity: .7;
+  }
+
+  &__wrapper{
+    width: 85vw;
+    text-align: center;
+    margin: auto;
+  }
+
+  &__button{
+    width: 75vw;
+    margin: auto;
+    padding: 5px;
+    background: $nc-blue !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: .2s;
+    &-disabled{
+      transition: .2s;
+      color: $nc-gray !important;
+      background: none !important;
+      border: 1px solid $nc-gray !important;
+      pointer-events: none;
+    }
+  }
+
+  &__input{
+    background: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $nc-blue;
+    margin: 10px 5px;
+    padding: 0 5px;
+    padding-bottom: 2px;
+    border-radius: 0;
+    text-align: center;
+    color: $nc-dark-gray;
+
+    &::placeholder{
+      text-align: center;
+      color: $nc-gray;
+    }
+    &-clear{
+      color: $nc-blue;
+      font-size: 12px;
+      padding: 5px 10px;
+      &__hide{
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    &-wrapper{
+      text-align: center;
+    }
+  }
+
+  &__error{
+    margin: 10px;
+    color: $nc-error-red;
+  }
+}

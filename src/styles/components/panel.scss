@@ -1,0 +1,110 @@
+.panel {
+  &__navbar{
+
+  }
+  &__back-ground{
+    background: $nc-dark-gray !important;
+  }
+  &__nav-icon {
+    color: $nc-blue;
+    font-weight: 400;
+  }
+  &__title {
+    font-weight: 300;
+    padding-left: 10px;
+
+    &-disabled{
+      opacity: .2;
+      pointer-events: none;
+      //background-color: darken($nc-gray, 5%);
+    }
+
+    &.active-state {
+      background: lighten($nc-gray, 10%) !important;
+
+    }
+  }
+  &__user-block{
+    margin-top: 44px;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid $nc-gray-border;
+
+
+    &__name{
+      padding-left: 15px;
+      font-size: 14px;
+      color: $nc-white;
+      &-wrap {
+        width: 85%;white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &-wrap {
+      width: 100%;
+      justify-content: space-between !important;
+    }
+  }
+
+  &__greeting {
+    font-weight: 300;
+    padding: 0 10px;
+    opacity: .7;
+    color: $nc-white;
+  }
+
+  &__icon {
+    color: $nc-white;
+    padding-right: 10px;
+    opacity: .7;
+  }
+
+  &__cup-icon {
+    width: 28px;
+    padding-right: 10px;
+  }
+  &__ble-icon {
+    height: 23px;
+    padding-right: 15px;
+  }
+
+  &__logout {
+    color: $nc-white;
+    font-size: 2em;
+    font-weight: 300;
+
+    &-icon{
+      color: $nc-blue;
+      padding-right: 10px;
+    }
+
+    &__back{
+      height: 100%;
+      width: 20%;
+    }
+
+    &__final{
+      height: 100%;
+      width: 80%;
+    }
+
+    &-wrapper{
+      overflow: hidden;
+      width: 0;
+      height:10vh;
+      position: absolute;
+      right: 0;
+      top:0;
+      background: $nc-dark-gray;
+      transition: .2s;
+
+      &__opened{
+        width: 100%;
+        transition: .2s;
+      }
+    }
+  }
+}

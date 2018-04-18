@@ -1,0 +1,69 @@
+// Colors
+// ------------------------------------------------ //
+// Brand Blue
+// @type HEX
+$nc-blue: #1700fc;
+// Brand Blue Hover
+// @ type HEX
+$nc-blue-hover: #0663fc;
+// Brand Grey
+// @type HEX
+$nc-gray: #9ba9ba;
+$nc-gray-border: lighten(#9ba9ba, 20);
+$nc-gray-bg: #ebe9ea;
+$nc-dark-gray: #252525;
+// Brand Green
+// @type HEX
+$nc-green: #28f392;
+// Brand Green Hover
+//@type HEX
+$nc-green-hover: lighten($nc-green, 10);
+// Brand Green Glow
+// @type rgba
+$nc-green: rgba(40, 243, 146, 1.0);
+$nc-green-glow: rgba(40, 243, 146, .5);
+// Brand White
+// @type HEX
+$nc-white: #fff;
+// Brand Black
+// @type HEX
+$nc-black: #2d2d2d;
+// Error Red
+// @type HEX
+$nc-error-red: #ff5722;
+//brand box shadow
+$nc-card-shadow: 0 3px 4px rgba(0,0,0,0.15);
+
+
+
+// Units
+// ------------------------------------------------ //
+/// Containers maximum width
+/// @type Length
+$max-width: 1180px !default;
+// Container Width
+// @type Length
+$nc-default-width: 768px !default;
+// XS
+// @type Length
+$nc-xs: .5em;
+// SM
+// @type Length
+$nc-sm: 1em;
+// MD
+// @type Length
+$nc-md: 1.5em;
+// LG
+// @type Lenght
+$nc-lg: 2em;
+
+// Maps
+// ------------------------------------------------ //
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
